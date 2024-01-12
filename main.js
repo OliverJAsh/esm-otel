@@ -1,4 +1,4 @@
-import './setup.js'
+require('./setup.js')
 
-import 'pino'
-import 'express'
+require('pino')
+require('express')

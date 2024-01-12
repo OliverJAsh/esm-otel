@@ -1,9 +1,9 @@
-import { DiagConsoleLogger, DiagLogLevel, diag } from '@opentelemetry/api';
-import { ExpressInstrumentation } from '@opentelemetry/instrumentation-express';
-import { PinoInstrumentation } from '@opentelemetry/instrumentation-pino';
-import { NodeSDK } from "@opentelemetry/sdk-node";
+const { DiagConsoleLogger, DiagLogLevel, diag } = require('@opentelemetry/api');
+const { ExpressInstrumentation } = require('@opentelemetry/instrumentation-express');
+const { PinoInstrumentation } = require('@opentelemetry/instrumentation-pino');
+const { NodeSDK } = require("@opentelemetry/sdk-node");
 
-diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.WARN);
+diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.DEBUG);
 
 const sdk = new NodeSDK({
   instrumentations: [

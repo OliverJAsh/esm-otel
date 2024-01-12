@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "dependencies": {
     "@opentelemetry/api": "^1.7.0",
     "@opentelemetry/instrumentation-express": "^0.34.1",
